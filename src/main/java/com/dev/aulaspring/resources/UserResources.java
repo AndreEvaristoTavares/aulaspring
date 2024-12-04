@@ -11,7 +11,7 @@ import com.dev.aulaspring.entities.User;
 @RequestMapping(value = "/users")
 public class UserResources {
     @GetMapping
-    public ResponseEntity<User> findAll(){
+    public ResponseEntity<User> findAll() {
         User user = new User(1L, "andre", "ande@gmail.com", "1199999-9999", "1234");
         return ResponseEntity.ok().body(user);
     }
